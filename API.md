@@ -14,6 +14,7 @@ Example:
 <GoogleMap
   bootstrapURLKeys={{
     key: API_KEY,
+    mapIds: [MAP_ID],
     language: 'ru',
     region: 'ru',
     libraries:['places'],
@@ -77,6 +78,7 @@ createMapOptions: function (maps) {
       mapTypeControl: false,
       scrollwheel: false,
       styles: [{ stylers: [{ 'saturation': -100 }, { 'gamma': 0.8 }, { 'lightness': 4 }, { 'visibility': 'on' }] }]
+      mapId: MAP_ID,
     }
   }
 
